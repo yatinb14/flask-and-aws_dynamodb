@@ -11,7 +11,8 @@ app.secret_key = 'your secret key'
 
 dynamodb = boto3.resource('dynamodb',
                     aws_access_key_id=keys.ACCESS_KEY_ID,
-                    aws_secret_access_key=keys.ACCESS_SECRET_KEY)
+                    aws_secret_access_key=keys.ACCESS_SECRET_KEY,
+                    region_name=keys.REGION_NAME)
 
 from boto3.dynamodb.conditions import Key, Attr
 
