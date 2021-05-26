@@ -7,8 +7,8 @@
   6) Then Click on " + " sign -> select "Append"-> select "string" . In the field type " name" and give any value to it let say "demo".
   7) Again Click on " + " sign -> select "Append"-> select "string" . In the field type "password" and give any value to it let say "Demo@123".
   
-### After creating dynamodb table and inserting some values.Login to ubuntu and do following steps.
-  1) """ apt-get update -y """
-  2) """ apt-get install python3 python3-pip git
-  3) 
-
+### After creating dynamodb table and inserting some values.Login to ubuntu and run some commands.
+  ```
+  1) apt-get update -y 
+  2) apt-get install python3 python3-pip git
+  ```
