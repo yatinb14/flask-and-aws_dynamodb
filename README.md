@@ -30,7 +30,7 @@
 - flask run --host 0.0.0.0 --port 8000
 
 ```
-**It will give the outpu like**
+**It will give the output like**
 
  Serving Flask app 'app.py' (lazy loading)
  * Environment: development
@@ -42,5 +42,5 @@
  * Debugger is active!
  * Debugger PIN: 122-780-811
 
-**You can check running app on ```publicip:portnumber```**
+**You can check that app is running on your ```publicip:portnumber``` eg: 64.65.222.37:8000**
 
