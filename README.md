@@ -7,8 +7,40 @@
   6) Then Click on " + " sign -> select "Append"-> select "string" . In the field type " name" and give any value to it let say "demo".
   7) Again Click on " + " sign -> select "Append"-> select "string" . In the field type "password" and give any value to it let say "Demo@123".
   
+  
 ### After creating dynamodb table and inserting some values.Login to ubuntu and run some commands.
   ```
-  1) apt-get update -y 
-  2) apt-get install python3 python3-pip git
+  - apt-get update -y 
+  - apt-get install python3 python3-pip git
+  
   ```
+### Then clone code ,go inside _flask-and-aws_dynamodb_ folder, install libraries from _requirements.txt_, update  access key and secret access key in _key_config.py_ file.
+```
+- git clone https://github.com/yatinb14/flask-and-aws_dynamodb.git
+- cd flask-and-aws_dynamodb/
+- ls
+- pip3 install -r requirements.txt
+
+```
+
+### Last step is to run our code
+```
+- export FLASK_APP=app.py
+- export FLASK_ENV=development
+- flask run --host 0.0.0.0 --port 8000
+
+```
+**It will give the outpu like**
+
+ Serving Flask app 'app.py' (lazy loading)
+ * Environment: development
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.44.4:5001/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 122-780-811
+
+**You can check running app on ```publicip:portnumber```**
+
