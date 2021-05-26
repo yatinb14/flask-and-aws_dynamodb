@@ -1,1 +1,1 @@
-# flask-and-aws_dynamodb
+###First create a table in AWS dynamodb 
