@@ -1,6 +1,5 @@
 ### First create a table in AWS dynamodb.
   1) Table name-> users
-  
   2) Primary key/Partition Key-> email ( it should be string)
   3) Check on default settings box and then create a table
   4) After this on the right side click on Items-> Create item
