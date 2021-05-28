@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, session
 import key_config as keys
+#from dynamoDB_create_table import *
 from botocore.exceptions import ClientError
 import boto3 
 from flask_session.__init__ import Session
@@ -16,9 +17,9 @@ dynamodb = boto3.resource('dynamodb',
 
 from boto3.dynamodb.conditions import Key, Attr
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+#@app.route('/')
+#def index():
+#    return render_template('index.html')
 
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -42,13 +43,14 @@ def signup():
         return render_template('login.html',msg = msg)
     return render_template('index.html')
 
+
 @app.route('/login')
 def login():    
     return render_template('login.html')
 
 
-@app.route('/check',methods=['GET', 'POST'])
-def check():
+@app.route('/home',methods=['GET', 'POST'])
+def home():
     if request.method=='POST':
         
         email = request.form['email']
@@ -66,9 +68,10 @@ def check():
             return render_template("home.html",name = name)
 
     return render_template("login.html")
-@app.route('/home')
-def home():
-    return render_template('home.html')
+
+#@app.route('/home')
+#def home():
+#    return render_template('home.html')
 
 @app.route("/logout",methods=['GET', 'POST'])  
 def logout():  
