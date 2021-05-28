@@ -42,5 +42,5 @@
  * Debugger is active!
  * Debugger PIN: 122-780-811
 
-**You can check that app is running on your ```publicip:portnumber``` eg: 64.65.222.37:8000**
+**You can check that app is running on your ```publicip:portnumber/login``` eg: http://64.65.222.37:8000/login**
 
