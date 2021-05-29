@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, session
+import os
+from flask import Flask, render_template, request, session, redirect
 import key_config as keys
 #from dynamoDB_create_table import *
 from botocore.exceptions import ClientError
@@ -8,12 +9,14 @@ from flask_session.__init__ import Session
 app = Flask(__name__)
 app.secret_key = 'your secret key'
 
+region_name = os.getenv("REGION_NAME")
+
 
 
 dynamodb = boto3.resource('dynamodb',
                     aws_access_key_id=keys.ACCESS_KEY_ID,
                     aws_secret_access_key=keys.ACCESS_SECRET_KEY,
-                    region_name=keys.REGION_NAME)
+                    region_name=region_name)
 
 from boto3.dynamodb.conditions import Key, Attr
 
@@ -65,7 +68,8 @@ def home():
         print(items[0]['password'])
         if password == items[0]['password']:
             
-            return render_template("home.html",name = name)
+            #return render_template("home.html",name = name)
+            return redirect('http://thinknyx.com')
 
     return render_template("login.html")
 
