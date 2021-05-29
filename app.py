@@ -14,8 +14,6 @@ region_name = os.getenv("REGION_NAME")
 
 
 dynamodb = boto3.resource('dynamodb',
-                    aws_access_key_id=keys.ACCESS_KEY_ID,
-                    aws_secret_access_key=keys.ACCESS_SECRET_KEY,
                     region_name=region_name)
 
 from boto3.dynamodb.conditions import Key, Attr
