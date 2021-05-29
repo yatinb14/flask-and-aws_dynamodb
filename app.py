@@ -67,7 +67,7 @@ def home():
         if password == items[0]['password']:
             
             #return render_template("home.html",name = name)
-            return redirect('http://thinknyx.com')
+            return redirect('https://thinknyx.com')
 
     return render_template("login.html")
 
