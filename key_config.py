@@ -1,6 +1,6 @@
-ACCESS_KEY_ID='##############23ss'
-ACCESS_SECRET_KEY='####################sedcr45'
-#REGION_NAME='us-east-2'
+#ACCESS_KEY_ID=''
+#ACCESS_SECRET_KEY=''
+REGION_NAME='us-east-2'
 
 
 

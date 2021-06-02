@@ -1,0 +1,71 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Demo Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="static/css/styles.min.css">
+
+
+
+  <style type="text/css">
+    .formin-container{display:table;max-width:400px;width:90%;margin:0 auto;box-shadow:1px 1px 5px rgba(0,0,0,.1)}
+
+
+
+
+</style>
+</head>
+<body>
+  <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+            <div class="container"><a class="navbar-brand" href="{{url_for('login')}}" style="color:#85C1E9;">Python and DynamoDb Demo</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div></nav></div>
+   <div class="register-photo">
+        <div class="formin-container">
+            <div class="image-holder"></div>
+
+             
+                
+    
+
+
+
+
+  
+        
+<div class="panel panel-primary">
+<div class="panel-heading"><h1 style="text-align:center" class="panel-title" >Users List</h1></div>
+<div class="panel-body">
+
+
+<div class="table-responsive">
+  <table id="zero_config" class="table table-striped table-bordered">
+<thead>  
+  <tr>
+    <th>E-mail</th>
+    <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for vendor in items %}
+  <tr>
+    <td> {{vendor.email}} </td>
+    <td> {{vendor.name}} </td>
+
+     
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</html>
+
+
+

@@ -16,21 +16,17 @@
   ```
 ### Then clone code ,go inside _flask-and-aws_dynamodb_ folder, install libraries from _requirements.txt_, update  access key and secret access key in _key_config.py_ file,also you need to pass environment var for region_name.
 ```
-- git clone https://github.com/yatinb14/flask-and-aws_dynamodb.git
-- cd flask-and-aws_dynamodb/
-- ls
+- git clone https://github.com/kul-samples/sample_python_dynamodb.git
+- cd sample_python_dynamodb/
 - pip3 install -r requirements.txt
 - export REGION_NAME=us-east-2
 - echo $REGION_NAME
-
 ```
-
 ### Last step is to run our code
 ```
 - export FLASK_APP=app.py
 - export FLASK_ENV=development
 - flask run --host 0.0.0.0 --port 8000
-
 ```
 **It will give the output like**
 
